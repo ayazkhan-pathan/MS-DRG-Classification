@@ -43,7 +43,7 @@ test_dataset = load_dataset("csv", data_files="test_temp.csv", split="train")
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 
 def preprocess(example):
-    return tokenizer(example["text"], truncation=True, padding=False, max_length=512)
+    return tokenizer(example["text"], truncation=True, padding=False, max_length=8192)
 
 train_dataset = train_dataset.map(preprocess, batched=True)
 val_dataset = val_dataset.map(preprocess, batched=True)
