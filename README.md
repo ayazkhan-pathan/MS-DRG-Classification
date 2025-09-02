@@ -113,15 +113,13 @@ cd DRG-GPT
 ### **2. Create a Virtual Environment**
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate      # Linux / Mac
-venv\Scripts\activate         # Windows
+conda env create -f environment.yml
 ```
 
 ### **3. Install Dependencies**
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 
 ---
@@ -131,19 +129,17 @@ pip install -r requirements.txt
 ### **1. Preprocess the Dataset**
 
 ```bash
-python src/preprocessing/clean_and_chunk.py \
-    --input data/discharge_summaries.csv \
-    --output data/processed_chunks.csv
+python -m data.MIMIC_Preprocessing
 ```
 
 ### **2. Fine-Tune the Model**
 
 ```bash
-python src/training/train_llama.py \
-    --model llama3 \
-    --epochs 5 \
-    --batch_size 8 \
-    --lr 2e-5
+python -m llama_single \
+    --base_model 'decapoda-research/llama-7b-hf' \
+    --model_size '7b' \
+    --micro_batch_size 8 \
+    --num_epochs 3 
 ```
 
 ### **3. Evaluate the Model**
