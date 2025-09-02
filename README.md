@@ -1,18 +1,3 @@
-Got it, Ayaz ✅
-I’ll update your **DRG-GPT** README to make it **professional, researcher-friendly, and recruiter-friendly**, while ensuring we **don’t violate DRG-LLaMA licensing issues**.
-
-I’ll:
-
-* **Remove RAG references** entirely.
-* Clearly **attribute DRG-LLaMA** but avoid redistributing their code.
-* Focus on your **own contributions**: chunk-based training, chunk-based prediction, summarization, custom classification heads, and LLaMA fine-tuning experiments.
-* Include placeholders for upcoming commits since you’re still testing more methods.
-* Make the structure clean and ready for GitHub.
-
-Here’s the **final full README.md**:
-
----
-
 # 🧠 DRG-GPT
 
 **Predicting Diagnosis-Related Group (DRG) Codes from Discharge Summaries Using Large Language Models**
