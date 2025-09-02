@@ -2,7 +2,6 @@
 
 **Predicting Diagnosis-Related Group (DRG) Codes from Discharge Summaries Using Large Language Models**
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)
 ![LLM](https://img.shields.io/badge/Model-LLaMA%203%20%7C%20BioClinicalBERT%20%7C%20Custom%20Heads-green.svg)
