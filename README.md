@@ -142,14 +142,6 @@ python -m llama_single \
     --num_epochs 3 
 ```
 
-### **3. Evaluate the Model**
-
-```bash
-python src/evaluation/eval_model.py \
-    --model models/llama3_best.pt \
-    --test data/test_set.csv
-```
-
 ---
 
 ## 🔗 Dependency on DRG-LLaMA
