@@ -101,49 +101,6 @@ DRG-GPT/
 
 ---
 
-## 🛠️ Installation
-
-### **1. Clone the Repository**
-
-```bash
-git clone https://github.com/iScape4code/DRG-GPT.git
-cd DRG-GPT
-```
-
-### **2. Create a Virtual Environment**
-
-```bash
-conda env create -f environment.yml
-```
-
-### **3. Install Dependencies**
-
-```bash
-conda env create -f environment.yml
-```
-
----
-
-## 📚 Usage
-
-### **1. Preprocess the Dataset**
-
-```bash
-python -m data.MIMIC_Preprocessing
-```
-
-### **2. Fine-Tune the Model**
-
-```bash
-python -m llama_single \
-    --base_model 'decapoda-research/llama-7b-hf' \
-    --model_size '7b' \
-    --micro_batch_size 8 \
-    --num_epochs 3 
-```
-
----
-
 ## 🔗 Dependency on DRG-LLaMA
 
 This project builds on the research and baseline methods from [DRG-LLaMA](https://github.com/hanyin88/DRG-LLaMA).
