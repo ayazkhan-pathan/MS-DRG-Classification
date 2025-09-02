@@ -26,7 +26,7 @@ Our goal is to improve **accuracy**, **interpretability**, and **scalability** f
 * **Chunk-Based Training** ✅ *(New)*
 
   * Long discharge summaries are split into **overlapping sentence-based chunks**.
-  * Trained LLaMA-based models on chunk-level representations.
+  * Trained Bert-based models on chunk-level representations.
 * **Chunk-Based Prediction** ✅ *(New)*
 
   * Aggregates chunk-level logits for **document-level DRG predictions**.
@@ -59,7 +59,6 @@ DRG-GPT/
 │── results/              # PR curves, ROC curves, metrics, summaries
 │── README.md             # Project documentation
 │── requirements.txt      # Python dependencies
-│── LICENSE               # License file
 ```
 
 ---
@@ -107,7 +106,7 @@ DRG-GPT/
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/<your-username>/DRG-GPT.git
+git clone https://github.com/iScape4code/DRG-GPT.git
 cd DRG-GPT
 ```
 
