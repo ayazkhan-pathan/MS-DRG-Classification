@@ -1,0 +1,15 @@
+# Versions of the main dependencies the test suite last passed with. CI installs these, so a
+# new release of one of them cannot turn the build red without a change here. Update them
+# together after a passing local run with newer versions.
+accelerate==1.10.1
+huggingface-hub==0.35.3
+numpy==2.0.2
+pandas==2.3.3
+pytest==8.4.2
+ruff==0.17.6
+safetensors==0.6.2
+scikit-learn==1.6.1
+scipy==1.13.1
+tokenizers==0.22.1
+torch==2.8.0
+transformers==4.57.1

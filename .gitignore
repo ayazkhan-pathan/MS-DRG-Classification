@@ -1,4 +1,14 @@
-test_temp.csv
-train_temp.csv
-val_temp.csv
-Base-Bert-finetuned
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Notes and model outputs stay local (MIMIC-IV may not be redistributed)
+data/
+runs/
+wandb/
